@@ -10,7 +10,7 @@ def drawing(img,imgae_array):
         for j in range(0,y):
             if imgae_array[j][i]==1:
                 draw.point((i,j),(0x00))
-
+    img = img.resize((300,300))
     return img
 
 def make_image(screen, bgcolor, filename,imgae_array):
